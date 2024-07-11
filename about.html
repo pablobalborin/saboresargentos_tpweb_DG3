@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Logis Bootstrap Template</title>
+  <title>Index - Logis Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Satisfy:wght@100;300;400;500;700;900&&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,249 +28,565 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Logis
-  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-  * Updated: Jun 02 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .btn-getstarted {
+      background-color: #d32626;
+      color: white;
+      padding: 5px 40px;
+      border-radius: 20px;
+      text-align: center;
+      display: inline-block;
+      font-size: 0.875rem;
+      min-width: 5px;
+      min-height: 20px;
+    }
+
+    .btn-getstarted:hover {
+      background-color: #f79d16;
+      color: rgb(0, 0, 0);
+    }
+
+    .logo img {
+      width: 200px;
+      height: 80px;
+    }
+
+    .hero h2 {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .icon-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-box img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 
-<body class="about-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Logis</h1>
+        <img src="assets/img/logo.png" alt="Logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="">Home<br></a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="index.html">Especialistas</a></li>
+          <li><a href="pricing.html">Productos</a></li>
+          <li><a href="index.html">Chefs</a></li>
+          <li><a href="index.html">Redes</a></li>
+          <li class="dropdown"><a href="#"><span>Talleres</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#">Arte del emplatado</a></li>
+              <li><a href="about.html">Gran Gaucho</a></li>
+              <li><a href="#">Platos Gourmet</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Quienes Somos</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="get-a-quote.html">Get a Quote</a>
-
     </div>
   </header>
-
   <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <img src="assets/img/world-dotted-map2.png" alt="" class="hero-bg" data-aos="fade-in">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
-      <div class="container position-relative">
-        <h1>About</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+        <div class="container">
+            <div class="row gy-4 d-flex justify-content-between">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-up">Taller Gran Gaucho</h1>
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        Participa en nuestro exclusivo curso de cocina donde aprenderás técnicas y recetas <strong>tradicionales argentinas.</strong> Impartido por chefs expertos, este curso te brindará habilidades únicas para crear auténticos platos argentinos, combinando ingredientes locales y métodos tradicionales. 
+                    </p>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+                    <div class="row">
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <img src="assets/img/iconos/ICONO-16.png" alt="Duración">
+                            <span><strong>Modalidad</strong> <br>Presencial</span>
+                        </div>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                            <img src="assets/img/iconos/ICONO-16.png" alt="Precio">
+                            <span><strong>Comienzo</strong><br>Agosto</span>
+                        </div>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                            <img src="assets/img/iconos/ICONO-16.png" alt="Mes de inicio">
+                            <span><strong>Duración</strong><br>8 Clases</span>
+                        </div>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                            <img src="assets/img/iconos/ICONO-16.png" alt="Presencial">
+                            <span><strong>Valor</strong><br>U$S 39/mes</span>
+                        </div>
+                    </div>
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-          </div>
-
-          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
-            <h3>About Us</h3>
-            <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                    <div class="button-container mt-4" style="text-align: left;">
+                      <a class="btn-getstarted" href="get-a-quote.html" data-aos="fade-up" data-aos-delay="600" style="margin-left: 0;">INSCRIBIRSE</a>
+                    </div>
                 </div>
-              </li>
-              <li>
-                <i class="bi bi-fullscreen-exit"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-              <li>
-                <i class="bi bi-broadcast"></i>
-                <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
-                </div>
-              </li>
-            </ul>
-          </div>
 
+                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                    <img src="assets/img/specials-6.png" class="img-fluid mb-3 mb-lg-0" alt="">
+                </div>
+            </div>
         </div>
+    </section><!-- /Hero Section -->
+</main>
 
-      </div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
-    </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
 
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <img src="assets/img/iconos/ICONO-05.png" alt="Icono Cocina" class="flex-shrink-0 icon-size">
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Sedes disponibles</p>
+          </div>
         </div>
+      </div><!-- End Stats Item -->
 
-      </div>
+      <div class="col-lg-3 col-md-12">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <img src="assets/img/iconos/Diploma.png" alt="Icono Alumnos" class="flex-shrink-0 icon-size">
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Alumnos graduados</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
 
-    </section><!-- /Stats Section -->
+      <div class="col-lg-3 col-md-12">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <img src="assets/img/iconos/Presencial.png" alt="Icono Chef" class="flex-shrink-0 icon-size">
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Chefs instructores</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
+      <div class="col-lg-3 col-md-12">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <img src="assets/img/iconos/Cuaderno.png" alt="Icono Clases" class="flex-shrink-0 icon-size">
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clases dictadas</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+
+
+
+    <img src="assets/img/separador.png" alt="Descripción de la imagen" style="display: block; margin: 20px auto;">
+
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Our Team<br></span>
-        <h2>Our Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h6>Taller</h6>
+        <h2>contenido del curso</h2>
+        <p>Técnicas de gastronomía local<br></p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row">
+        <div class="row gy-5">
 
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Walter White</h4>
-                <span>Web Development</span>
-                <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+          
 
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+          <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
 
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Content</span>
-                <p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+          <div class="col-xl-6 d-flex">
+            <div class="row align-self-center gy-4">
+
+              
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Introducción a la gastronomía</h3>
                 </div>
-              </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Historia de la Cocina Local</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Ingredientes Autóctonos</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Técnicas de Cocina Tradicional</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Preparación de Platos Emblemáticos</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Uso de Especias y Condimentos Regionales</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="800">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Maridaje de Comidas y Bebidas Locales</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="900">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Presentación y Estilismo de Platos</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="1000">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Conservación y almacenamiento de alimentos</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="1100">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Proyecto Final y Evaluación</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section><!-- /Features Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+    
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section" style="background-image: url('assets/img/fondo-sedes.png'); background-size: cover; background-position: center;">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h6>Sedes</h6>
+    <h2>todo a tu alcance</h2>
+    <p>Un espacio cómodo y totalmente equipo <br></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="pricing-tem">
+          <div class="pricing-item" style="background-image: url('assets/img/lienzo4.jpg');">
+           
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <h3 style="color: #20c997;">Olivos</h3>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="pricing-tem">
+          <div class="pricing-item" style="background-image: url('assets/img/lienzo5.jpg');">
+         
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <h3 style="color: #d652fe;">Palermo</h3>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="pricing-tem">
+          <div class="pricing-item" style="background-image: url('assets/img/lienzo7.jpg');">
+           
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <h3 style="color: #fd7e14;">Martinez</h3>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="pricing-tem">
+          <div class="pricing-item" style="background-image: url('assets/img/lienzo6.jpg');">
+          
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <h3 style="color: #3c89fc;">Paternal</h3>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+    </div><!-- End pricing row -->
+
+  </div>
+
+</section><!-- /Pricing Section -->
+
+
+
+
+
+
+ <!-- Portfolio Section -->
+ <section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h6>Galería</h6>
+    <h2>Presentaciones Gauchas</h2>
+    <p>Muestra de los emplatados del taller</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> GRAN GAUCHO</h4>          
+              <p>Braseado</p>
+              <a href="assets/img/portfolio/app-1.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> GRAN GAUCHO</h4>          
+              <p>Sous Vide</p>
+              <a href="assets/img/portfolio/app-2.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+   
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> GRAN GAUCHO</h4>         
+              <p>Emplatado Marinado</p>
+              <a href="assets/img/portfolio/app-3.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> ESPECIAL QUESOS </h4>         
+              <p>Queso ahumado</p>
+              <a href="assets/img/portfolio/books-1.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+  
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> ESPECIAL QUESOS </h4>          
+              <p>Ensaladas</p>
+              <a href="assets/img/portfolio/books-2.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> ESPECIAL QUESOS </h4>          
+              <p>Tableta de quesos</p>
+              <a href="assets/img/portfolio/books-3.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> PLATOS GOURMET</h4>            
+              <p>Puntos y Gotas</p>
+              <a href="assets/img/portfolio/product-1.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+  
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> PLATOS GOURMET</h4>           
+              <p>Textura Contrapuestas</p>
+              <a href="assets/img/portfolio/product-2.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+             <div class="portfolio-info"> 
+              <h4><strong>TALLER</strong> PLATOS GOURMET</h4>          
+              <p>Emplatado asimétrico</p>
+              <a href="assets/img/portfolio/product-3.jpg" title="Plato 1" data-gallery="portfolio-gallery-app" ></i></a>              
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+      </div><!-- End Portfolio Container -->
+
+      
+     
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+
+   
+
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial section">
+
+     
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h6>Chesfs</h6>
+        <h2>Artistas Culinarios </h2>
+        <p>Los mejores Chefs del mundo comparten todo su arte en cada plato.</p>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper">
+        <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -283,6 +599,16 @@
                 "el": ".swiper-pagination",
                 "type": "bullets",
                 "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
               }
             }
           </script>
@@ -290,83 +616,68 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+              
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                  "a cocina es arte y pasión; cada plato es una oportunidad para crear magia. </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/specials-5.png" class="testimonial-img" alt="">
+                  <h3>Leonela Scaloni</h3>
+                  <h4>Chef de Cocina</h4>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+              
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                  En cada ingrediente local, encontramos el alma de nuestra tierra; ¡cocinemos con orgullo!   </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/specials-4.png" class="testimonial-img" alt="">
+                  <h3>Juliana Álvarez</h3>
+                  <h4>Chef de Banquetes</h4>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+               
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                  La belleza de un plato está en los detalles; el emplatado es nuestra firma artística  </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/specials-3.png" class="testimonial-img" alt="">
+                  <h3>Lionel Cuccinatti</h3>
+                  <h4>Chef Personal</h4>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+              
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                  La innovación culinaria empieza en la presentación; ¡deja que tu creatividad brille en cada plato! </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/specials-2.png" class="testimonial-img" alt="">
+                  <h3>Angela Di María</h3>
+                  <h4>Chef Partie</h4>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
+                
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                  Cocinar es un acto de amor y creatividad; transforma cada comida en una obra de arte.  </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/specials-1.png" class="testimonial-img" alt="">
+                  <h3>Emanuela Martínez</h3>
+                  <h4>Chef Ejecutiva</h4>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonials item -->
 
           </div>
           <div class="swiper-pagination"></div>
@@ -376,144 +687,375 @@
 
     </section><!-- /Testimonials Section -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Frequently Asked Questions</span>
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
 
-      <div class="container">
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
 
-        <div class="row justify-content-center">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h6>Talleres</h6>
+    <h2>Maestría de emplatados</h2>
+    <p>Aprende a transformar cada plato en una obra de arte culinaria con nuestros cursos especializados en emplatado y decoración.</p>
+  </div><!-- End Section Title -->
 
-          <div class="col-lg-10">
+  <div class="container" data-aos="zoom-in" data-aos-delay="100">
 
-            <div class="faq-container">
+    <div class="row justify-content-center">
 
-              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
+      <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="150">
+        <div class="pricing-item business-plan" style="background-image: url('assets/img/lienzo1.jpg'); background-size: cover; background-position: center; color: #fff;">
+          <h3>ARTE DEL EMPLATADO</h3>
+          <span><br></span>
+          <div style="display: flex; justify-content: center; align-items: center; background: none;">
+            <img src="assets/img/iconos/ICONO-10.png" alt="Developer Plan Icon" style="max-width: 200px;">
           </div>
-
+          <ul>
+            <li><i class="bi bi-check"></i> <span>Presentación artística e innovadora</span></li>
+            <li><i class="bi bi-check"></i> <span>Ingredientes locales destacados</span></li>
+            <li><i class="bi bi-check"></i> <span>Equilibrio y composición perfectos</span></li>
+          </ul>
+          <h4><sup>u$s</sup>19<span> / mes</span></h4>
+          <div class="text-center"><a href="#" class="buy-btn">Saber más</a></div>
         </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="450">
+        <div class="pricing-item business-plan" style="background-image: url('assets/img/lienzo3.jpg'); background-size: cover; background-position: center; color: #fff;">
+          <h3>PLATOS GOURMET</h3>
+          <span><br></span>
+          <div style="display: flex; justify-content: center; align-items: center; background: none;">
+            <img src="assets/img/iconos/ICONO-9.png" alt="Developer Plan Icon" style="max-width: 200px;">
+          </div>
+          <ul>
+            <li><i class="bi bi-check"></i> <span>Especializado para elegancia</span></li>
+            <li><i class="bi bi-check"></i> <span>Detalles finos y delicados</span></li>
+            <li><i class="bi bi-check"></i> <span>Últimas tendencias en emplatado</span></li>
+          </ul>
+          <h4><sup>u$s</sup>35<span> / mes</span></h4>
+          <div class="text-center"><a href="#" class="buy-btn">Saber más</a></div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Pricing Section -->
+
+
+  
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+  <img src="assets/img/testimonials-bg.png" class="testimonials-bg" alt="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Donato Van Gogh</h3>
+            <h4>Chef &amp; Cocinero Profesional</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Como chef ejecutivo, dominar el emplatado y la decoración ha elevado <br>la presentación de nuestros platos, atrayendo más clientes y mejorando nuestra reputación.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Frida de Erquiaga</h3>
+            <h4>Catering Manager</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Organizar eventos gastronómicos es mi especialidad. Aprender nuevas técnicas de emplatado <br>y decoración ha mejorado nuestras propuestas culinarias, destacando con presentaciones creativas y sofisticadas.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Paulina Cezanne</h3>
+            <h4>Cocinera de línea</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Como cocinero de línea, la rapidez es crucial. Mejorar mi emplatado ha garantizado que cada plato sea consistente y atractivo, proporcionando una experiencia memorable a nuestros comensales.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Maru Botticelli</h3>
+            <h4>Chef ejecutiva</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>La presentación es fundamental en mi restaurante para asegurar que cada plato sea no solo delicioso, sino también visualmente impresionante, reflejando nuestra dedicación a la calidad.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>Rafael Lepes</h3>
+            <h4>Sous Chef</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Trabajar como sous chef me ha enseñado la importancia del emplatado. Aprendiendo nuevas técnicas, ahora puedo asegurar que cada plato sea visualmente impresionante y delicioso.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
 
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-    </section><!-- /Faq Section -->
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+
+
+
+
+<!-- Featured Services Section -->
+
+
+<section id="featured-services" class="featured-services section">
+  <div class="container section-title" data-aos="fade-up">
+    <h6>Beneficios</h6>
+    <h2>perfeccionando el conocimento</h2>
+    <p>Al completar el taller gran gaucho recibirás </p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon mb-3">
+          <img src="assets/img/iconos/certificado.png" alt="Cocina Jujeña Icon" class="icon-img">
+        </div>
+        <h4 class="title">Asociado Élite</h4>
+     
+      </div>
+      <!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon mb-3">
+          <img src="assets/img/iconos/entrega-diploma.png" alt="Sabores de Salta Icon" class="icon-img">
+        </div>
+        <h4 class="title">Certificado Internacional</h4>
+      
+      </div>
+      <!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon mb-3">
+          <img src="assets/img/iconos/Precio.png" alt="Bebidas Andinas Icon" class="icon-img">
+        </div>
+        <h4 class="title">Descuentos Premium</h4>
+    
+      </div>
+      <!-- End Service Item -->
+
+     
+      <!-- End Service Item -->
+    </div>
+  </div>
+</section><!-- /Featured Services Section -->
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section" style="background-image: url('assets/img/fondo-contacto.png'); background-size: cover; background-position: center; background-size: 1500px;">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h6>Contacto</h6>
+    <h2>Rápido y sencillo</h2>
+    <p>¿Tenes preguntas? Escríbenos ahora y nos pondremos en comunicaremos.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="200">
+              <img src="assets/img/iconos/ICONO-05.png" alt="Address Icon" class="custom-icon">
+              <h3>Casa Central</h3>
+              <p>Avenida Córdoba 5430</p>
+              <p>Palermo Soho</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="300">
+              <img src="assets/img/iconos/ICONO-15.png" alt="Address Icon" class="custom-icon">
+              <h3>Llamanos</h3>
+              <p>011 6899 7571</p>
+              <p>011 6754 5894</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="400">
+              <img src="assets/img/iconos/ICONO-06.png" alt="Address Icon" class="custom-icon">
+              <h3>Correo</h3>
+              <p>info@saboresargentos.com</p>
+              <p>contacto@saboresargentos.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="500">
+              <img src="assets/img/iconos/ICONO-07.png" alt="Address Icon" class="custom-icon">
+              <h3>Horarios</h3>
+              <p>Lunes a Viernes</p>
+              <p>6:00 hs. a 14:00 hs.</p>
+            </div>
+          </div><!-- End Info Item -->
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Correo" required>
+            </div>
+
+            <div class="col-12">
+              <input type="text" class="form-control" name="subject" placeholder="Consulta" required>
+            </div>
+
+            <div class="col-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Enviar consulta</button>
+            </div>
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+    </div>
+  </div>
+</section><!-- /Contact Section -->
+
+
 
   </main>
-
-  <footer id="footer" class="footer">
-
+ 
+  
+  <footer id="footer" class="footer" style="background-image: url('assets/img/fondo-footer.png'); background-size: cover; background-position: center;">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Logis</span>
+            <img src="assets/img/logo.png" alt="Sabores Argentos Logo">
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Calidad y excelencia son valores de nuestra esencia <br> al servicio de todos nuestros clientes.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
           </div>
         </div>
-
+  
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Enlaces útiles</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Política de privacidad</a></li>
           </ul>
         </div>
-
+  
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Nuestros Servicios</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Cursos de Cocina</a></li>
+            <li><a href="#">Recetas Tradicionales</a></li>
+            <li><a href="#">Tours Gastronómicos</a></li>
+            <li><a href="#">Eventos Especiales</a></li>
+            <li><a href="#">Consultoría Culínaria</a></li>
           </ul>
         </div>
-
+  
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <h4>Contacto</h4>
+          <p>Avenida Córdoba 5430</p>
+          <p>Capital Federal, Buenos Aires, Argentina</p>
+          <p class="mt-4"><strong>Teléfono:</strong> <span>+54 9 388 1234567</span></p>
+          <p><strong>Correo Electrónico:</strong> <span>info@saboresargento.com</span></p>
         </div>
-
       </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Logis</strong> <span>All Rights Reserved</span></p>
+  
+    <div class="container text-center mt-4">
+      <p>© <span>Derechos de Autor</span> <strong class="px-1 sitename">Pablo Balborín</strong> <span>Todos los Derechos Reservados</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
+  
+
+  
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
